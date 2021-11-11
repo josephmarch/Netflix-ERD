@@ -1,4 +1,4 @@
-# Netflix ERD
+# Netflix ETL
 Final Report saved as a DOCX with images within GitHub. Below is a simplified version of that report.
   
 ## Netflix ETL - Final Report
