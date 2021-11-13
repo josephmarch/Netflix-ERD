@@ -70,3 +70,5 @@ Query 3 -  Our final query brought together the data from both of the previous q
 
 ## Summary:
 The datasets we created can be used to compare financial outcomes to media released on a quarterly basis for Netflix. Data can be used to compare subscriber and revenue increases by geographical area, as well as stock prices by date or quarter. We also maintained the IMBD, genre, and language data so that comparisons can be formed based on these unique areas. Our SQL joined tables allow for a user to recognize relationships between differing elements of financial outcomes and media releases.
+
+## Contacts:
