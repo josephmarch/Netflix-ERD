@@ -73,4 +73,5 @@ The datasets we created can be used to compare financial outcomes to media relea
 
 ## Contacts:
 Joseph March: josephmarch@gmail.com
+
 Marisa Kiger: marisa_krg@yahoo.com
