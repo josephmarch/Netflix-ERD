@@ -36,19 +36,19 @@ Once we gathered our datasets, our first step was to decide how the data should 
 ### Data Cleaning
 After importing all of the CSV files into their own tables, our first steps in cleaning the tables were to determine which data was not relevant and what needed to be added. We removed the Runtime column from the Netflix Original Films & IMDB Scores data table and the No_of_Seasons column from the Netflix TV Series Dataset. Then we merged the two tables together so we could give all of the movies and TV series their own designated Media_ID. We also calculated a Quarter table from the premiere date so the Quarter a movie or TV series was released in could be compared to the other tables. Then we broke the table up into several tables to conform to 2nd normalization. This became the following tables: Netflix_Movie_Show_List, Netflix_Movies_IMDB, Netflix_Movies_Lang, Netflix_Movies_Genre, Netflix_Shows_Seasons, and Netflix_Shows_Genre tables.
 
-![ERD](/Images/TeamSociotracker_Table1.png)
+![Initial_Tables](/Images/TeamSociotracker_Table1.png)
 
 We then created a Quarters table which included a Quarter_ID for every quarter and year. This serves as a table that can be used to combine our other tables which rely on Quarter_ID to show the time periods represented.
 
-![ERD](/Images/TeamSociotracker_Table2.png)
+![Quarter_ID_Table](/Images/TeamSociotracker_Table2.png)
 
 Next, we combined the Netflix Subscribers and Revenue by Country tables and calculated quarterly change columns by revenue and number of subscribers. These were further split into four tables, by area, to create the Netflix_Rev_Sub_USC, Netflix_Rev_Sub_EMEA, Netflix_Rev_Sub_LA, and Netflix_Rev_Sub_AP tables.
 
-![ERD](/Images/TeamSociotracker_Table3.png)
+![Revenue_Subscribers](/Images/TeamSociotracker_Table3.png)
 
 Last, we modified the Netflix Stock Price (All Time) Dataset to create the Netflix_Stock_Prices table by adding a Quarter column and setting the date column as the index.
 
-![ERD](/Images/TeamSociotracker_Table4.png)
+![Stock_Table](/Images/TeamSociotracker_Table4.png)
 
 After cleaning the data, we used SQLAlchemy to import all of the tables into those created by our schema in PostgreSQL. As part of this process we had to change all of our columns to lowercase first so that they matched SQLalchemy’s table conversion. 
 
@@ -69,21 +69,21 @@ Query 1 -  In order to display a summary of all the information for each Netflix
 -	The  Netflix_Shows_Seasons column “No_of_Seasons”
 -	The “Genre” columns from Netflix_Movies_Genre and Netflix_Shows_Genre 
 
-![ERD](/Images/join1.png)
+![Query1](/Images/join1.jpg)
 
 Query 2 -  To display a financial comparison between stock prices, revenue, and number of subscribers for the United States and Canada per quarter, we used Join statements, as well as a subquery to calculate the minimum, maximum, and average closing stock prices grouped by quarter, to present the following information within the same table:
 -	The Quarter column “Quarter_ID”
 -	The calculated Min, Avg, and Max of the Netflix_Stock_Prices “Close” column
 -	The Neflix_Rev_Sub_USC columns “Area_Name”, “Revenue”, “Rev_Quarterly_Change”, “Subscribers”, “Sub_Quarterly_Change”
 
-![ERD](/Images/join2.png)
+![Query2](/Images/join2.jpg)
 
 Query 3 -  Our final query brought together the data from both of the previous queries to display the media and financial information in one table.
 
 ## Summary:
 The datasets we created can be used to compare financial outcomes to media released on a quarterly basis for Netflix. Data can be used to compare subscriber and revenue increases by geographical area, as well as stock prices by date or quarter. We also maintained the IMBD, genre, and language data so that comparisons can be formed based on these unique areas. Our SQL joined tables allow for a user to recognize relationships between differing elements of financial outcomes and media releases.
 
-![ERD](/Images/join3.png)
+![Query3](/Images/join3.jpg)
 
 ## Contacts:
 Joseph March: josephmarch@gmail.com
