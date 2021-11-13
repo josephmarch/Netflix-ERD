@@ -69,21 +69,21 @@ Query 1 -  In order to display a summary of all the information for each Netflix
 -	The  Netflix_Shows_Seasons column “No_of_Seasons”
 -	The “Genre” columns from Netflix_Movies_Genre and Netflix_Shows_Genre 
 
-![Query1](/Images/join1.jpg)
+![Query1](/Images/join1.jpg?raw=true)
 
 Query 2 -  To display a financial comparison between stock prices, revenue, and number of subscribers for the United States and Canada per quarter, we used Join statements, as well as a subquery to calculate the minimum, maximum, and average closing stock prices grouped by quarter, to present the following information within the same table:
 -	The Quarter column “Quarter_ID”
 -	The calculated Min, Avg, and Max of the Netflix_Stock_Prices “Close” column
 -	The Neflix_Rev_Sub_USC columns “Area_Name”, “Revenue”, “Rev_Quarterly_Change”, “Subscribers”, “Sub_Quarterly_Change”
 
-![Query2](/Images/join2.jpg)
+![Query2](/Images/join2.jpg?raw=true)
 
 Query 3 -  Our final query brought together the data from both of the previous queries to display the media and financial information in one table.
 
 ## Summary:
 The datasets we created can be used to compare financial outcomes to media released on a quarterly basis for Netflix. Data can be used to compare subscriber and revenue increases by geographical area, as well as stock prices by date or quarter. We also maintained the IMBD, genre, and language data so that comparisons can be formed based on these unique areas. Our SQL joined tables allow for a user to recognize relationships between differing elements of financial outcomes and media releases.
 
-![Query3](/Images/join3.jpg)
+![Query3](/Images/join3.jpg?raw=true)
 
 ## Contacts:
 Joseph March: josephmarch@gmail.com
