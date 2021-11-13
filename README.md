@@ -1,4 +1,6 @@
 # Netflix ETL
+The original team: Joseph March, Angela Angulo, Marisa Kiger, and Bonnie Bailey worked out of this repository: https://github.com/designergal3002/Sociotracker-Project2.git, however, due to some complications, we eventually each opted to host our own version. This is Joseph March's copy and edits to the original work.
+
 Final Report saved as a DOCX with images within GitHub. Below is a simplified version of that report.
   
 ## Netflix ETL - Final Report
