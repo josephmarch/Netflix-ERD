@@ -78,4 +78,4 @@ Marisa Kiger: marisa_krg@yahoo.com
 
 Angela Angulo: anguloag@vcu.edu
 
-Bonnie Bailey: 
+Bonnie Bailey: bonnie.lyn@hotmail.com
