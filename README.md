@@ -3,7 +3,7 @@ The original team: Joseph March, Angela Angulo, Marisa Kiger, and Bonnie Bailey 
 
 Final Report saved as a DOCX with images within GitHub. Below is a simplified version of that report.
   
-## Netflix ETL - Final Report
+# Netflix ETL - Final Report
 
 ## Extraction: 
 We used four datasets from Kaggle and one dataset from Yahoo Finance (cited below). All of the data sources utilized were in CSV format. Timeframes included in the datasets varied, ranging from 2002-2021 overall. 
