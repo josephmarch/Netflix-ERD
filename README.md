@@ -77,3 +77,5 @@ Joseph March: josephmarch@gmail.com
 Marisa Kiger: marisa_krg@yahoo.com
 
 Angela Angulo: anguloag@vcu.edu
+
+Bonnie Bailey: 
