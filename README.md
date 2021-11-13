@@ -4,9 +4,6 @@ The original team: Joseph March, Angela Angulo, Marisa Kiger, and Bonnie Bailey 
 Final Report saved as a DOCX with images within GitHub. Below is a simplified version of that report.
   
 ## Netflix ETL - Final Report
-Project #2
-
-Team Sociotracker: Angela Angulo, Bonnie Bailey, Joseph March, Marisa Kiger
 
 ## Extraction: 
 We used four datasets from Kaggle and one dataset from Yahoo Finance (cited below). All of the data sources utilized were in CSV format. Timeframes included in the datasets varied, ranging from 2002-2021 overall. 
@@ -34,7 +31,7 @@ https://finance.yahoo.com/quote/NFLX/history?period1=1033948800&period2=16335648
 ### Data Normalization
 Once we gathered our datasets, our first step was to decide how the data should be organized in the database. We decided to create a relational database in pgAdmin, and built an Entity Relationship Diagram in second normalization form using QuickDBD. We reorganized the original data in order to eliminate fields with multiple values and reduce redundancies within each of the tables. We also established appropriate primary and foreign keys for each of the entities in the database. 
 
-![ERD](../main/ERD/NetflixERD.png)
+![ERD](/ERD/NetflixERD.png)
 
 ### Data Cleaning
 After importing all of the CSV files into their own tables, our first steps in cleaning the tables were to determine which data was not relevant and what needed to be added. We removed the Runtime column from the Netflix Original Films & IMDB Scores data table and the No_of_Seasons column from the Netflix TV Series Dataset. Then we merged the two tables together so we could give all of the movies and TV series their own designated Media_ID. We also calculated a Quarter table from the premiere date so the Quarter a movie or TV series was released in could be compared to the other tables. Then we broke the table up into several tables to conform to 2nd normalization. This became the following tables: Netflix_Movie_Show_List, Netflix_Movies_IMDB, Netflix_Movies_Lang, Netflix_Movies_Genre, Netflix_Shows_Seasons, and Netflix_Shows_Genre tables.
